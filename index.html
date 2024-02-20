@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link css file and js file to html file -->
+    <link rel="js" href="index.js">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Cyborg</title>
+</head>
+  
+<body>
+        <!--creating two div elements in the header 'container'. one div element for the navigation part and the othet for description part-->
+        <header>
+            <div class="headernav">
+                <nav>
+                    <a class="logo" href="#">Team<span style="color: red;">-Cyborg</span></a>
+                    <ul role="list" class="navlinks">
+                        <li id="active"><a href="#">Home</a></li>
+                        <li><a href="#" style="opacity: 0.5;">About</a></li>
+                        <li><a href="#" style="opacity: 0.5;">Products</a></li>
+                        <li><a href="#" style="opacity: 0.5;">Services</a></li>
+                    </ul>
+                    <img src="menu-btn.png" alt="" class="menu-btn">
+                </nav>
+    
+                <!-- this div section is for the textarea and button -->
+                <div class="form">
+                    <input type="text" style="padding: 10px 50px; border-radius: 5px;">
+                    <button id="search" type="submit">Search</button>
+                </div>
+    
+            </div>
+            <div class="motto">
+                <h1>Dramatically Engage</h1><br>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p><br><br>
+                <button>Engage Now</button>
+    
+            </div>
+        </header> 
+    <main>
+        <section class="original">
+            <!-- div tag for the heading and paragraph -->
+            <div class="texts">
+                <h2>Superior Collaboration <span>Visualize Quality</span></h2><br>
+                <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products</p>
+            </div><br>
+            <!-- create row and col div -->
+            <!-- div tag to conatain the col. the col div consists of images and texts -->
+            <div class="rows">
+                <div class="col">
+                    <!-- creating a div a contain all elements because i don't want them to be separate -->
+                    <div>
+                        <img src="download.svg" alt="IMAGE"><br><br>
+                        <a href="#"><h3>Efficiently Unleash</h3></a><br>
+                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <img src="download.svg" alt="IMAGE"><br><br>
+                        <a href="#">
+                            <h3>Completely Synergize</h3>
+                        </a><br>
+                        <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <img src="download.svg" alt="IMAGE"><br><br>
+                        <a href="#">
+                            <h3>Dynamically Procrastinate</h3>
+                        </a><br>
+                        <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is like the previous one, but without images and from left-to-right -->
+
+        <div class="reverse">
+            <section>
+                <div class="rows">
+                    <div class="col">
+                        <!-- creating a div a contain all elements because i don't want them to be separate -->
+                        <!-- this section heading is not a link -->
+                        <div>
+                            <h3 id="procrastinate">Dynamically Procrastinate</h3><br>
+                            <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p><br>
+                            <button>Procrastinate</button>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div>
+                            <h3 id="synergize">Completely Synergize</h3><br>
+                            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p><br>
+                            <button>Synergize</button>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div>
+                            <h3 id="unleash">Efficiently Unleash</h3><br>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p><br>
+                            <button>Unleash</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Terms & Condition <span>|</span></a></li>
+                <li><a href="#">Private policy <span>|</span></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul><br>
+        </div>
+        <div>
+            <p>Copyright @ Example.com 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

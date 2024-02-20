@@ -1,0 +1,257 @@
+@import url(Poppins/Poppins-Regular.ttf);
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+button{
+    background-color: white;
+    padding: 0.3125em 0.625em;
+    border: 0.0625em white solid;
+    border-radius: 0.3125em;
+    padding-inline: 0.9375em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+h2{
+    padding-left: 0.875em;
+}
+
+/* #search {
+    position: relative;
+    bottom: 0.75rem;
+} */
+nav {
+    display: flex ;
+}
+
+.navlinks {
+    color: gray;
+}
+/* .navlinks:hover {
+    color: white;
+} */
+#active {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+.headernav {
+    background-color: rgb(32, 30, 30);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    padding-left: 4.6875rem;
+    z-index: 9999;
+}
+.headernav ul li{
+    display: inline-block;
+    padding: 1.25rem;
+}
+.logo{
+    display: inline-block;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    color: white;
+}
+.logo a::after {
+    content: 💻;
+}
+.headernav ul li a {
+    color: white;
+}
+.headernav ul li a:visited{
+    opacity: 1;
+}
+.headernav .form {
+    position: relative;
+    right: 50px;
+    padding-right: 6.25rem;
+    padding-top: 0.75rem;
+}
+/* .dropdown{
+    display: inline-block;
+}
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 0;
+    padding-right: 10px;
+    padding-left: 20px ;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    background-color: white;
+}
+.dropdown:hover .content{
+    display: block;
+} */
+.motto {
+    background-color: #9acd32;
+    padding: 120px 120px 80px 85px;
+}
+.motto h1 {
+    font-size: 3.9375rem;
+    color: #adff2f;;
+}
+
+/* adding an effect that will make the headings change color and have underline when hovered on */
+.original .rows .col h3:hover{
+    color: rgb(6, 92, 190);
+    text-decoration: underline;
+}
+.motto p {
+    color: #adff2f;
+    font-size: 1.25rem;
+}
+
+/* styling the sections in general */
+section, footer {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* styling the first section */
+.original .rows .col{
+    width: 100%;
+    margin: 0 20px;
+}
+.original .rows .col a {
+    color: rgb(0, 140, 255);
+}
+img {
+    width: 100%;
+    height: 350px;
+}
+.texts {
+    font-size: 1.25rem;
+}
+.texts h2 span {
+    font-size: 18px;
+    opacity: 0.7;
+}
+.texts p {
+    font-size: 16px;
+    opacity: 0.7;
+    padding-left: 22px;
+}
+.rows {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.texts.rows .col p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 14px;
+}
+.rows .col {
+   display: flex;
+   flex-direction: column;
+}
+.reverse {
+    background-color:rgb(211, 145, 24);
+    padding: 10px;
+
+}
+.reverse .rows .col {
+    margin: 0 10px;
+}
+.reverse .rows h3 {
+    color: black;
+    font-size: 20px;
+}
+#procrastinate::before{
+    content: 🔥;
+}
+#unleash::before {
+    content: 🍀;
+}
+#synergize::before {
+    content: 🌳;
+}
+.footer-links ul li {
+    display: inline-block;
+}
+.footer-links ul li a{
+    color: rgb(0, 140, 255);
+    font-size: 20px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile device */
+
+@media (max-width: 767px){
+   nav {
+    padding: 0%;
+   } 
+   .logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+   }
+   .menu-btn{
+    display: block;
+   }
+   .navlinks{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: whitesmoke;
+    margin-top: -900px;
+    transition: .5s ease;
+   }
+   .mobile-menu{
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+   }
+   .navlinks li {
+    margin: 30px auto;
+   }
+   .rows {
+    align-items: center;
+    width: 100%;
+}
+   .rows .col {
+    display: flex;
+    flex-direction: row;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+.tunde {
+    color: gray;
+}
